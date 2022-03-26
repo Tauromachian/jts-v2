@@ -153,6 +153,23 @@
 
 <script>
 export default {
+  mounted() {
+    const navBarTogglerButton = document.getElementById('navbar-toggler')
+    const modal = document.getElementById('modal')
+
+    const body = document.body
+
+    navBarTogglerButton.addEventListener('click', function () {
+      modal.style.display = 'block'
+      body.style.overflow = 'hidden'
+    })
+
+    const modalCloseButton = document.getElementById('modal-close-button')
+    modalCloseButton.addEventListener('click', function () {
+      modal.style.display = 'none'
+      body.style.overflow = 'unset'
+    })
+  },
   methods: {
     backToTop() {
       window.scrollTo({
