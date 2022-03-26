@@ -75,9 +75,11 @@
     </section>
 
     <div class="d-flex justify-content-center">
-      <span class="mdi mdi-circle fs-3 mx-3"></span>
-      <span class="mdi mdi-arrow-down-bold-circle fs-1 mx-3"></span>
-      <span class="mdi mdi-circle fs-3 mx-3"></span>
+      <div class="separator d-flex justify-content-center align-items-center">
+        <span
+          class="mdi mdi-arrow-down-bold-circle fs-1 mx-3 separator-content"
+        ></span>
+      </div>
     </div>
 
     <section>
