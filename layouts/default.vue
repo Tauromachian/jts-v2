@@ -151,6 +151,9 @@
         </div>
       </div>
     </footer>
+    <a id="toTop" href="#home" class="scroll" style="display: block">
+      <span id="toTopHover" style="opacity: 1"> </span
+    ></a>
   </div>
 </template>
 
