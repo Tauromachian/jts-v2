@@ -218,5 +218,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Johnson Turbine | Pratt & Whitney GG4/FT4 Specialists',
+    }
+  },
+}
 </script>
