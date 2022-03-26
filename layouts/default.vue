@@ -32,7 +32,7 @@
                 style="--bs-scroll-height: 100px"
               >
                 <li class="nav-item">
-                  <nuxt-link class="nav-link active" aria-current="page" to="/">
+                  <nuxt-link class="nav-link" aria-current="page" to="/">
                     Home
                   </nuxt-link>
                 </li>
@@ -56,7 +56,7 @@
                 class="navbar-nav d-flex flex-column justify-content-center align-items-center h-100 w-100 mx-0"
               >
                 <li class="nav-item">
-                  <nuxt-link class="nav-link active" aria-current="page" to="/">
+                  <nuxt-link class="nav-link" aria-current="page" to="/">
                     Home
                   </nuxt-link>
                 </li>
