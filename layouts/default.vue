@@ -145,14 +145,28 @@
         </div>
       </div>
     </footer>
-    <a id="toTop" href="#home" class="scroll" style="display: block">
+    <a id="toTop" class="scroll" style="display: block" @click="backToTop">
       <span id="toTopHover" style="opacity: 1"> </span
     ></a>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    backToTop() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      })
+    },
+  },
+}
 </script>
 
-<style></style>
+<style>
+.scroll {
+  cursor: pointer;
+}
+</style>
