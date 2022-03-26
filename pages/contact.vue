@@ -127,7 +127,10 @@
 </template>
 
 <script>
+import emailsGenerator from '@/mixins/emails-generator'
+
 export default {
+  mixins: [emailsGenerator],
   head() {
     return {
       title: 'Johnson Turbine Support | Service',
