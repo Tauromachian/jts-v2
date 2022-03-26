@@ -1,116 +1,219 @@
 <template>
   <div>
-    <header class="hero-header">
-      <div class="d-flex flex-column hero-container">
-        <!-- navigation -->
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a href="index.html" class="navbar-brand">
-              <img
-                class="img-fluid"
-                src="images/johnson-logo-min.png"
-                alt="JTS Logo"
-                width="500"
-              />
-            </a>
-            <button
-              id="navbar-toggler"
-              class="navbar-toggler mt-3 btn btn-outline-light"
-              type="button"
-              data-bs-toggle="collapse"
-              aria-controls="navbarScroll"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="mdi mdi-menu fs-1 text-white"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse navbar-default ayanEffects ayanHoverEffect_7"
-            >
-              <ul
-                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                style="--bs-scroll-height: 100px"
-              >
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="parts.html">Parts</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="repair.html">Repair</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Service</a>
-                </li>
+    <section>
+      <div class="container">
+        <h2>Services we offer for the Pratt & Whitney GG4 & FT4</h2>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div id="modal" class="ayanEffects ayanHoverEffect_7">
-              <ul
-                class="navbar-nav d-flex flex-column justify-content-center align-items-center h-100 w-100 mx-0"
-              >
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="parts.html">Parts</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="repair.html">Repair</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Service</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-              <button id="modal-close-button" class="btn position-absolute">
-                <span class="mdi mdi-close fs-2"></span>
-              </button>
+        <div class="row">
+          <div
+            class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3 justify-content-center align-items-center d-none d-lg-flex"
+          >
+            <span class="mdi color-primary mdi-arrow-right-bottom"></span>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+            <div class="card h-100">
+              <div class="d-flex justify-content-center what-we-offer-icon">
+                <span class="mdi color-primary mdi-view-module"></span>
+              </div>
+              <div class="card-body position-relative">
+                <h3 class="card-title">Parts</h3>
+                <p class="card-text">
+                  With our extensive inventory of over 10,000 line items we can
+                  support the needs of any requirement.
+                </p>
+                <div class="my-5"></div>
+                <a
+                  href="parts.html"
+                  class="btn btn-primary position-absolute card--button"
+                  >Learn more!</a
+                >
+              </div>
             </div>
           </div>
-        </nav>
-        <div
-          class="container d-flex flex-column justify-content-center align-items-center my-5 hero-content text-center"
-        >
-          <h1 class="text-white hero-title">
-            The only source
-            <div class="text-center text-sm-end me-lg-5 pe-xl-5">
-              of
-              <span class="hero-title--highlight"> knowledge </span>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+            <div class="card h-100">
+              <div class="d-flex justify-content-center what-we-offer-icon">
+                <span class="mdi color-primary mdi-pipe-wrench"></span>
+              </div>
+              <div class="card-body position-relative">
+                <h3 class="card-title">Repair</h3>
+                <p class="card-text">
+                  We repair fuel manifolds, pumps, gearboxes, starters, valves,
+                  actuators, and more.
+                </p>
+                <div class="my-5"></div>
+                <a
+                  href="repair.html"
+                  class="btn btn-primary position-absolute card--button"
+                  >Learn more!</a
+                >
+              </div>
             </div>
-            <div class="text-center text-sm-start ms-lg-5 ps-xl-5">
-              is
-              <span class="hero-title--highlight">Experience</span>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+            <div class="card h-100">
+              <div class="d-flex justify-content-center what-we-offer-icon">
+                <span class="mdi color-primary mdi-cog"></span>
+              </div>
+              <div class="card-body position-relative">
+                <h3 class="card-title">Service</h3>
+                <p class="card-text">
+                  We provide engine/turbine overhaul and project management
+                  services including field service.
+                </p>
+                <div class="my-5"></div>
+                <a
+                  href="service.html"
+                  class="btn btn-primary position-absolute card--button"
+                  >Learn more!</a
+                >
+              </div>
             </div>
-          </h1>
-          <div class="d-flex justify-content-center mt-5 call-to-action-button">
-            <a href="contact.html" class="btn btn-primary px-3 px-sm-5 py-sm-3"
-              >Request a quote</a
-            >
           </div>
         </div>
       </div>
-      <!-- //navigation -->
-    </header>
+    </section>
+
+    <div class="d-flex justify-content-center">
+      <span class="mdi mdi-circle fs-3 mx-3"></span>
+      <span class="mdi mdi-arrow-down-bold-circle fs-1 mx-3"></span>
+      <span class="mdi mdi-circle fs-3 mx-3"></span>
+    </div>
+
+    <section>
+      <div class="container">
+        <h2>
+          Since 1997, Pratt & Whitney GG4 & FT4 gas turbines are what we do.
+        </h2>
+        <p>
+          For over 25 years, we have supported the GG4/FT4 market with an
+          extensive inventory, knowledgeable customer service, and fast and
+          reliable shipping. To continue our support, we expanded our
+          capabilities into component repair, engine/turbine overhaul, and field
+          service.
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img
+              src="images/gg4-liquid-fuel-manifolds-678162-678163.jpg"
+              class="img-fluid"
+              alt="Liquid fuel manifolds 678162/678163"
+            />
+          </div>
+          <div class="d-none d-md-block col-md-4">
+            <img
+              src="images/gg4-rotable-parts-fuel-pump-starter-chandler-evans-tdi-garrett-airesearch-allied-signal-honeywell.jpg"
+              class="img-fluid"
+              alt="Rotable parts. Fuel pump, starters, and more"
+            />
+          </div>
+          <div class="d-none d-md-block col-md-4">
+            <img
+              src="images/gg4-pratt-whitney-gas-turbine-install.JPG"
+              class="img-fluid"
+              alt="Pratt and Whitney GG4 gas turbine install."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container ribbon">
+      <img
+        src="images/ribbon.png"
+        class="img-fluid"
+        alt="25th Anniversary Ribbon"
+      />
+    </div>
+
+    <section>
+      <div class="container">
+        <h2>Contact us</h2>
+        <p>
+          Want to work with us, or have a question? Give us a ring or send an
+          email anytime.
+        </p>
+        <div class="mb-4">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="images/undraw-contact-us-re.svg"
+                alt="Contact us"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <!-- Contact cards -->
+                <div class="col-12 mt-3">
+                  <div class="card">
+                    <div class="card-body d-flex">
+                      <div>
+                        <h4>Locations</h4>
+                        <p>Office- Hackettstown, NJ</p>
+                        <p>Shop- Bloomfield, CT</p>
+                      </div>
+                      <div
+                        class="ms-auto d-flex justify-content-center align-items-center me-3"
+                      >
+                        <a
+                          href="https://www.google.com/maps/place/311+Warren+St,+Hackettstown,+NJ+07840/@40.846898,-74.829912,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3839dfdda5597:0x971c732987e6bce6!8m2!3d40.846898!4d-74.827718?hl=en-US"
+                        >
+                          <span
+                            class="mdi color-primary mdi-map-marker fs-1"
+                            aria-hidden="true"
+                          ></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="card">
+                    <div class="card-body d-flex">
+                      <div id="email-holder" class="d-flex flex-column">
+                        <h4>Emails</h4>
+                      </div>
+                      <div
+                        class="ms-auto d-flex justify-content-center align-items-center me-3"
+                      >
+                        <a id="email-principal">
+                          <span
+                            class="mdi color-primary mdi-email fs-1"
+                            aria-hidden="true"
+                          ></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="card">
+                    <div class="card-body d-flex">
+                      <div>
+                        <h4>Phones</h4>
+                        <p>Office- (973) 263-5696</p>
+                        <p>Shop- (860) 200-2202</p>
+                      </div>
+                      <div
+                        class="ms-auto d-flex justify-content-center align-items-center me-3"
+                      >
+                        <a href="tel:+19732635696"
+                          ><span
+                            class="mdi color-primary mdi-phone fs-1"
+                            aria-hidden="true"
+                          ></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
