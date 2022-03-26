@@ -2,7 +2,7 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+License URL: http:/'/creativecommons.org'/licenses/by/3.0/
 --*/
 @import '~bootstrap/scss/bootstrap';
 
@@ -75,7 +75,7 @@ header {
 .hero-header {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url('/bg_1.jpg') no-repeat;
+    url(/bg_1.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -256,10 +256,30 @@ section {
   width: 245px;
   background: rgba(255, 255, 255, 0.23);
 }
-
+.subscribe input.sub-email {
+  background: transparent;
+  border: none;
+  padding: 6px 15px;
+  outline: none;
+  font-size: 16px;
+  width: 190px;
+  color: #ffffff;
+}
+.subscribe input[type='submit'] {
+  background: transparent;
+  border: none;
+  outline: none;
+  background: url('/search.png') no-repeat 0px 0px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-size: 25px;
+  bottom: 5px;
+  right: 11px;
+}
 /*-- //header --*/
 .banner {
-  background: url('/bg_1_30.jpg') no-repeat 0px 0px;
+  background: url(/bg_1_30.jpg) no-repeat 0px 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -359,6 +379,32 @@ section {
   max-width: none;
   top: 10%;
   text-align: center;
+}
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  top: 78%;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 34px;
+  width: 34px;
+  background: url('/left.png') no-repeat 0px 0px;
+}
+.callbacks_nav.prev {
+  left: auto;
+  background: url('/back.png') no-repeat 0px 0px;
+  left: 18em;
+}
+.callbacks_nav.next {
+  left: auto;
+  background: url('/next.png') no-repeat 0px 0px;
+  right: 18em;
+}
+.callbacks_nav:active {
+  opacity: 1;
 }
 
 .callbacks2_nav:active {
@@ -1137,7 +1183,7 @@ p.number-w3 {
 /*-- about-inner --*/
 .about-banner-w3ls {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/bg_1_top.jpg') no-repeat 0px 0px;
+    url(/bg_1_top.jpg) no-repeat 0px 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1277,7 +1323,16 @@ img.img-r {
   cursor: pointer;
   z-index: 100;
 }
-
+.nbs-flexisel-nav-left {
+  right: -5em;
+  top: 80% !important;
+  background: url(/arrow_left.png) no-repeat 15px 15px #204e82;
+}
+.nbs-flexisel-nav-right {
+  right: -10em;
+  top: 80% !important;
+  background: url(/arrow_right.png) no-repeat 15px 15px #204e82;
+}
 /*--//flexisel--*/
 
 .flex-info {
@@ -1849,15 +1904,15 @@ figure.effect-img .ga-text p {
 
 /*-- contact --*/
 .contact {
-  background: url('/meeting_50.jpg') no-repeat 0px 0px;
+  background: url(/meeting_50.jpg) no-repeat 0px 0px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-background-size: cover;
 }
-a .contact2 {
-  background: url('/turbine_60.jpg') no-repeat 0px 0px;
+.contact2 {
+  background: url(/turbine_60.jpg) no-repeat 0px 0px;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3243,10 +3298,10 @@ i.glyphicon.glyphicon-calendar {
     height: 40px;
   }
   .nbs-flexisel-nav-left {
-    background: url('/arrow_left.png') no-repeat 12px 11px #204e82;
+    background: url(/arrow_left.png) no-repeat 12px 11px #204e82;
   }
   .nbs-flexisel-nav-right {
-    background: url('/arrow_right.png') no-repeat 13px 11px #204e82;
+    background: url(/arrow_right.png) no-repeat 13px 11px #204e82;
   }
   .nbs-flexisel-nav-left {
     right: 6em;
@@ -3950,6 +4005,43 @@ i.glyphicon.glyphicon-calendar {
 @media screen and (min-width: 1000px) {
   .ribbon {
     width: 40%;
+  }
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  display: block;
+  height: 0.09em;
+  min-width: 30vw;
+}
+
+.separator::before {
+  background: linear-gradient(to right, rgba(240, 240, 240, 0), #212529);
+  margin-right: 5px;
+}
+
+.separator::after {
+  background: linear-gradient(to left, rgba(240, 240, 240, 0), #212529);
+  margin-left: 5px;
+}
+
+.separator-content {
+  animation: translater 1.5s linear infinite;
+}
+
+@keyframes translater {
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
