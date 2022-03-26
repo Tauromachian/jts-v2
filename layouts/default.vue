@@ -153,6 +153,17 @@
 
 <script>
 export default {
+  data() {
+    return {
+      links: [
+        { text: 'Home', link: '/' },
+        { text: 'Parts', link: '/parts' },
+        { text: 'Repair', link: '/repair' },
+        { text: 'Service', link: '/service' },
+        { text: 'Contact', link: '/contact' },
+      ],
+    }
+  },
   mounted() {
     const navBarTogglerButton = document.getElementById('navbar-toggler')
     const modal = document.getElementById('modal')
