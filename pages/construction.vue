@@ -4,7 +4,7 @@
       <h5 class="title-w3">
         <img
           class="img-fluid"
-          src="images/under_const.png"
+          src="/under_const.png"
           alt="Under Construction"
         />
       </h5>

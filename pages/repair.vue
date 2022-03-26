@@ -85,7 +85,7 @@
           <div class="row">
             <div class="col-md-6">
               <img
-                src="images/gg4-liquid-fuel-manifolds-678162-678163.jpg"
+                src="/gg4-liquid-fuel-manifolds-678162-678163.jpg"
                 alt="Liquid fuel manifolds 678162/678163"
                 class="img-fluid"
               />
@@ -96,7 +96,7 @@
           <div class="row">
             <div class="col-md-6">
               <img
-                src="images/gg4-chandler-evans-fuel-pump-50452.JPG"
+                src="/gg4-chandler-evans-fuel-pump-50452.JPG"
                 alt="GG4 Chandler Evans fuel pump 50452"
                 class="img-fluid"
               />
@@ -107,7 +107,7 @@
           <div class="row">
             <div class="col-md-6">
               <img
-                src="images/gg4-garrett-airesearch-allied-signal-honeywell-starter-383288-1-1.jpg"
+                src="/gg4-garrett-airesearch-allied-signal-honeywell-starter-383288-1-1.jpg"
                 alt="GG4 Garrett AiResearch / Allied Signal / Honeywell starter 383288-1-1"
                 class="img-fluid"
               />
@@ -118,7 +118,7 @@
           <div class="row">
             <div class="col-md-6">
               <img
-                src="images/gg4-pratt-whitney-P&D-valve-1048280.jpg"
+                src="/gg4-pratt-whitney-P&D-valve-1048280.jpg"
                 alt="GG4 P&D (Pressure & Dump) valve."
                 class="img-fluid"
               />

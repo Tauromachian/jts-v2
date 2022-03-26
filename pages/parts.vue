@@ -19,7 +19,7 @@
         <div class="col-md-6">
           <img
             class="img-fluid w-100"
-            src="images/gg4-ft4-parts-warehouse.jpg"
+            src="/gg4-ft4-parts-warehouse.jpg"
             alt="GG4, FT4 Parts warehouse"
           />
         </div>
@@ -39,7 +39,7 @@
             <div class="col-md-6">
               <img
                 class="img-fluid w-100"
-                src="images/turbine-parts-1.jpg"
+                src="/turbine-parts-1.jpg"
                 alt="Turbine parts"
               />
             </div>
@@ -70,7 +70,7 @@
         <div class="col-md-6">
           <img
             class="img-fluid w-100"
-            src="images/gg4-rotable-parts-fuel-pump-starter-chandler-evans-tdi-garrett-airesearch-allied-signal-honeywell.jpg"
+            src="/gg4-rotable-parts-fuel-pump-starter-chandler-evans-tdi-garrett-airesearch-allied-signal-honeywell.jpg"
             alt="Rotable parts. Fuel pump, starters, and more"
           />
         </div>

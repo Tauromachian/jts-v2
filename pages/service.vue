@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-6">
           <img
-            src="images/gg4-pratt-whitney-gas-turbine-install.JPG"
+            src="/gg4-pratt-whitney-gas-turbine-install.JPG"
             alt="Pratt and Whitney GG4 gas turbine install."
             class="img-fluid"
           />
