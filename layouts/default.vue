@@ -8,7 +8,7 @@
             <a href="index.html" class="navbar-brand">
               <img
                 class="img-fluid"
-                src="images/johnson-logo-min.png"
+                src="/johnson-logo-min.png"
                 alt="JTS Logo"
                 width="500"
               />
@@ -121,7 +121,7 @@
         <a href="index.html" class="navbar-brand">
           <img
             class="img-fluid"
-            src="images/johnson-logo-min.png"
+            src="/johnson-logo-min.png"
             alt="JTS Logo"
             width="300"
           />

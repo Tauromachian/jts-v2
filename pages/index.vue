@@ -95,21 +95,21 @@
         <div class="row">
           <div class="col-12 col-md-4">
             <img
-              src="images/gg4-liquid-fuel-manifolds-678162-678163.jpg"
+              src="/gg4-liquid-fuel-manifolds-678162-678163.jpg"
               class="img-fluid"
               alt="Liquid fuel manifolds 678162/678163"
             />
           </div>
           <div class="d-none d-md-block col-md-4">
             <img
-              src="images/gg4-rotable-parts-fuel-pump-starter-chandler-evans-tdi-garrett-airesearch-allied-signal-honeywell.jpg"
+              src="/gg4-rotable-parts-fuel-pump-starter-chandler-evans-tdi-garrett-airesearch-allied-signal-honeywell.jpg"
               class="img-fluid"
               alt="Rotable parts. Fuel pump, starters, and more"
             />
           </div>
           <div class="d-none d-md-block col-md-4">
             <img
-              src="images/gg4-pratt-whitney-gas-turbine-install.JPG"
+              src="/gg4-pratt-whitney-gas-turbine-install.JPG"
               class="img-fluid"
               alt="Pratt and Whitney GG4 gas turbine install."
             />
@@ -119,11 +119,7 @@
     </section>
 
     <div class="container ribbon">
-      <img
-        src="images/ribbon.png"
-        class="img-fluid"
-        alt="25th Anniversary Ribbon"
-      />
+      <img src="/ribbon.png" class="img-fluid" alt="25th Anniversary Ribbon" />
     </div>
 
     <section>
@@ -137,7 +133,7 @@
           <div class="row">
             <div class="col-md-6">
               <img
-                src="images/undraw-contact-us-re.svg"
+                src="/undraw-contact-us-re.svg"
                 alt="Contact us"
                 class="img-fluid"
               />
