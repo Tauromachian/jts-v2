@@ -22,11 +22,12 @@
                   support the needs of any requirement.
                 </p>
                 <div class="my-5"></div>
-                <a
-                  href="parts.html"
+                <nuxt-link
+                  to="/parts"
                   class="btn btn-primary position-absolute card--button"
-                  >Learn more!</a
                 >
+                  Learn more!
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -42,11 +43,12 @@
                   actuators, and more.
                 </p>
                 <div class="my-5"></div>
-                <a
-                  href="repair.html"
+                <nuxt-link
+                  to="/repair"
                   class="btn btn-primary position-absolute card--button"
-                  >Learn more!</a
                 >
+                  Learn more!
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -62,11 +64,12 @@
                   services including field service.
                 </p>
                 <div class="my-5"></div>
-                <a
-                  href="service.html"
+                <nuxt-link
+                  to="/service"
                   class="btn btn-primary position-absolute card--button"
-                  >Learn more!</a
                 >
+                  Learn more!
+                </nuxt-link>
               </div>
             </div>
           </div>
