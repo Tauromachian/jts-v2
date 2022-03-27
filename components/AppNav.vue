@@ -10,6 +10,7 @@
         />
       </nuxt-link>
       <button
+        v-if="isScreenSmall"
         class="navbar-toggler mt-3 btn btn-outline-light"
         type="button"
         data-bs-toggle="collapse"
@@ -21,6 +22,7 @@
         <span class="mdi mdi-menu fs-1 text-white"></span>
       </button>
       <div
+        v-if="!isScreenSmall"
         class="collapse navbar-collapse navbar-default ayanEffects ayanHoverEffect_7"
       >
         <ul
@@ -47,7 +49,7 @@
           </li>
         </ul>
       </div>
-      <div id="modal" class="ayanEffects ayanHoverEffect_7">
+      <div v-else id="modal" class="ayanEffects ayanHoverEffect_7">
         <ul
           class="navbar-nav d-flex flex-column justify-content-center align-items-center h-100 w-100 mx-0"
         >
@@ -85,11 +87,23 @@ export default {
     return {
       modal: {},
       body: {},
+      width: '',
     }
+  },
+
+  computed: {
+    isScreenSmall() {
+      return this.width < 991
+    },
   },
   mounted() {
     this.modal = document.getElementById('modal')
     this.body = document.body
+
+    this.width = window.innerWidth
+    window.addEventListener('resize', () => {
+      this.width = window.innerWidth
+    })
   },
 
   methods: {
