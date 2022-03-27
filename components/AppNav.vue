@@ -10,13 +10,13 @@
         />
       </nuxt-link>
       <button
-        id="navbar-toggler"
         class="navbar-toggler mt-3 btn btn-outline-light"
         type="button"
         data-bs-toggle="collapse"
         aria-controls="navbarScroll"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        @click="openModal"
       >
         <span class="mdi mdi-menu fs-1 text-white"></span>
       </button>
@@ -70,7 +70,7 @@
             <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
           </li>
         </ul>
-        <button id="modal-close-button" class="btn position-absolute">
+        <button class="btn position-absolute" @click="closeModal">
           <span class="mdi mdi-close fs-2"></span>
         </button>
       </div>
@@ -88,20 +88,20 @@ export default {
     }
   },
   mounted() {
-    const navBarTogglerButton = document.getElementById('navbar-toggler')
     this.modal = document.getElementById('modal')
     this.body = document.body
+  },
 
-    navBarTogglerButton.addEventListener('click', () => {
+  methods: {
+    openModal() {
       this.modal.style.display = 'block'
       this.body.style.overflow = 'hidden'
-    })
+    },
 
-    const modalCloseButton = document.getElementById('modal-close-button')
-    modalCloseButton.addEventListener('click', () => {
+    closeModal() {
       this.modal.style.display = 'none'
       this.body.style.overflow = 'unset'
-    })
+    },
   },
 }
 </script>
