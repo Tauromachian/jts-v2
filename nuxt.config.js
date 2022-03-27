@@ -1,7 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  router: {
+    base: 'jts-v2',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'jts-v2',
