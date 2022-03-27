@@ -81,5 +81,27 @@
 <script>
 export default {
   name: 'AppNav',
+  data() {
+    return {
+      modal: {},
+      body: {},
+    }
+  },
+  mounted() {
+    const navBarTogglerButton = document.getElementById('navbar-toggler')
+    this.modal = document.getElementById('modal')
+    this.body = document.body
+
+    navBarTogglerButton.addEventListener('click', () => {
+      this.modal.style.display = 'block'
+      this.body.style.overflow = 'hidden'
+    })
+
+    const modalCloseButton = document.getElementById('modal-close-button')
+    modalCloseButton.addEventListener('click', () => {
+      this.modal.style.display = 'none'
+      this.body.style.overflow = 'unset'
+    })
+  },
 }
 </script>
