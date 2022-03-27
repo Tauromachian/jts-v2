@@ -31,22 +31,47 @@
           style="--bs-scroll-height: 100px"
         >
           <li class="nav-item">
-            <nuxt-link class="nav-link" aria-current="page" to="/">
+            <nuxt-link
+              :class="{ active: path === 'index' }"
+              class="nav-link"
+              aria-current="page"
+              to="/"
+            >
               Home
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/parts" class="nav-link">Parts</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'parts' }"
+              to="/parts"
+              class="nav-link"
+              >Parts</nuxt-link
+            >
           </li>
           <li class="nav-item">
-            <nuxt-link to="/repair" class="nav-link">Repair</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'repair' }"
+              to="/repair"
+              class="nav-link"
+              >Repair</nuxt-link
+            >
           </li>
           <li class="nav-item">
-            <nuxt-link to="/service" class="nav-link">Service</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'service' }"
+              to="/service"
+              class="nav-link"
+              >Service</nuxt-link
+            >
           </li>
 
           <li class="nav-item">
-            <nuxt-link to="/contact" class="nav-link">Contact</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'contact' }"
+              to="/contact"
+              class="nav-link"
+              >Contact</nuxt-link
+            >
           </li>
         </ul>
       </div>
@@ -55,22 +80,47 @@
           class="navbar-nav d-flex flex-column justify-content-center align-items-center h-100 w-100 mx-0"
         >
           <li class="nav-item">
-            <nuxt-link class="nav-link" aria-current="page" to="/">
+            <nuxt-link
+              :class="{ active: path === 'index' }"
+              class="nav-link"
+              aria-current="page"
+              to="/"
+            >
               Home
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/parts">Parts</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'parts' }"
+              class="nav-link"
+              to="/parts"
+              >Parts</nuxt-link
+            >
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/repair">Repair</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'repair' }"
+              class="nav-link"
+              to="/repair"
+              >Repair</nuxt-link
+            >
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/service">Service</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'service' }"
+              class="nav-link"
+              to="/service"
+              >Service</nuxt-link
+            >
           </li>
 
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/contact">Contact</nuxt-link>
+            <nuxt-link
+              :class="{ active: path === 'contact' }"
+              class="nav-link"
+              to="/contact"
+              >Contact</nuxt-link
+            >
           </li>
         </ul>
         <button class="btn position-absolute" @click="closeModal">
