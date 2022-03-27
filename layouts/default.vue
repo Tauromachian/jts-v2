@@ -164,6 +164,11 @@ export default {
       ],
     }
   },
+  computed: {
+    isHomeView() {
+      return this.$nuxt.$route.name === 'index'
+    },
+  },
   mounted() {
     const navBarTogglerButton = document.getElementById('navbar-toggler')
     const modal = document.getElementById('modal')
