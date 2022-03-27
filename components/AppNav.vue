@@ -11,6 +11,7 @@
       </nuxt-link>
       <button
         v-if="isScreenSmall"
+        id="navbar-toggler"
         class="navbar-toggler mt-3 btn btn-outline-light"
         type="button"
         data-bs-toggle="collapse"
