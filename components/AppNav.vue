@@ -95,6 +95,15 @@ export default {
     isScreenSmall() {
       return this.width < 991
     },
+    path() {
+      return this.$nuxt.$route.name
+    },
+  },
+
+  watch: {
+    path() {
+      this.closeModal()
+    },
   },
   mounted() {
     this.modal = document.getElementById('modal')
