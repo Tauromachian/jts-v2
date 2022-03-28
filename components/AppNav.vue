@@ -160,6 +160,8 @@ export default {
     this.modal = document.getElementById('modal')
     this.body = document.body
 
+    this.closeModal()
+
     this.width = window.innerWidth
     window.addEventListener('resize', () => {
       this.width = window.innerWidth
