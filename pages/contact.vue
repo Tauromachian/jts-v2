@@ -109,7 +109,22 @@
                     aria-label="With textarea"
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button
+                  v-if="loading"
+                  class="btn btn-primary"
+                  type="button"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                  Loading...
+                </button>
+                <button v-else type="submit" class="btn btn-primary">
+                  Submit
+                </button>
               </form>
             </div>
             <span
@@ -142,34 +157,40 @@ import emailsGenerator from '@/mixins/emails-generator'
 
 export default {
   mixins: [emailsGenerator],
-  head() {
-    return {
-      title: 'Johnson Turbine Support | Service',
-    }
-  },
   data() {
     return {
       form: {
         address: '',
         subject: '',
-        body: ''
-      }
+        body: '',
+      },
+      loading: false,
+    }
+  },
+  head() {
+    return {
+      title: 'Johnson Turbine Support | Service',
     }
   },
   methods: {
-    async sendEmail () {
+    async sendEmail() {
+      this.loading = true
       try {
-        await this.$axios.$post('https://jts-email-service.herokuapp.com/api/email', this.form)
+        await this.$axios.$post(
+          'https://jts-email-service.herokuapp.com/api/email',
+          this.form
+        )
       } catch (error) {
-        console.log(error);
+        console.log(error.message)
       }
       this.form = {
         address: '',
         subject: '',
-        body: ''
+        body: '',
       }
-    }
-  }
+      this.loading = true
+    },
+  },
 }
 </script>
 
