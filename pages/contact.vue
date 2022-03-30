@@ -172,6 +172,7 @@
 import emailsGenerator from '@/mixins/emails-generator'
 
 export default {
+  name: 'ContactView',
   mixins: [emailsGenerator],
   data() {
     return {
