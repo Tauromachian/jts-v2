@@ -97,6 +97,7 @@
                     type="email"
                     class="form-control"
                     aria-describedby="emailHelp"
+                    required
                   />
                   <div id="emailHelp" class="form-text">
                     We'll never share your email with anyone else.
@@ -110,6 +111,7 @@
                     v-model="form.subject"
                     class="form-control"
                     aria-describedby="Contact me subject"
+                    required
                   />
                 </div>
                 <div class="mb-3">
@@ -120,6 +122,7 @@
                     v-model="form.body"
                     class="form-control"
                     aria-label="With textarea"
+                    required
                   ></textarea>
                 </div>
                 <button
