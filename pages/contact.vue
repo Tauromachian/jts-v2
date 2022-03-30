@@ -74,13 +74,13 @@
         <div class="col-md-6 mt-5 mt-sm-0">
           <div class="card mt-3 position-relative">
             <div class="card-body">
-              <form>
+              <form @submit.prevent="sendEmail">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"
                     >Email address</label
                   >
                   <input
-                    id="exampleInputEmail1"
+                    v-model="form.address"
                     type="email"
                     class="form-control"
                     aria-describedby="emailHelp"
@@ -90,10 +90,21 @@
                   </div>
                 </div>
                 <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Subject</label
+                  >
+                  <input
+                    v-model="form.subject"
+                    class="form-control"
+                    aria-describedby="Contact me subject"
+                  />
+                </div>
+                <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label"
                     >Message</label
                   >
                   <textarea
+                    v-model="form.body"
                     class="form-control"
                     aria-label="With textarea"
                   ></textarea>
@@ -136,6 +147,29 @@ export default {
       title: 'Johnson Turbine Support | Service',
     }
   },
+  data() {
+    return {
+      form: {
+        address: '',
+        subject: '',
+        body: ''
+      }
+    }
+  },
+  methods: {
+    async sendEmail () {
+      try {
+        await this.$axios.$post('https://jts-email-service.herokuapp.com/api/email', this.form)
+      } catch (error) {
+        console.log(error);
+      }
+      this.form = {
+        address: '',
+        subject: '',
+        body: ''
+      }
+    }
+  }
 }
 </script>
 
