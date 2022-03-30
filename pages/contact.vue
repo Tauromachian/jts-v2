@@ -76,7 +76,6 @@
             <div class="card-body">
               <div v-if="message.text">
                 <div
-                  v-if="message.success"
                   class="alert"
                   :class="{
                     'alert-success': message.success,
@@ -111,7 +110,6 @@
                     v-model="form.subject"
                     class="form-control"
                     aria-describedby="Contact me subject"
-                    required
                   />
                 </div>
                 <div class="mb-3">
@@ -193,17 +191,22 @@ export default {
   methods: {
     async sendEmail() {
       this.loading = true
+
+      let response
       try {
-        await this.$axios.$post(
+        response = await this.$axios.$post(
           'https://jts-email-service.herokuapp.com/api/email',
           this.form
         )
       } catch (error) {
-        this.message.text = error.message
-        this.message.success = false
-        this.loading = false
+        this.setIncorrectMessage(error.message)
         return
       }
+      if (response.error) {
+        this.setIncorrectMessage(response.message)
+        return
+      }
+
       this.message.success = true
       this.message.text = 'Email send successfully'
       this.form = {
@@ -211,6 +214,11 @@ export default {
         subject: '',
         body: '',
       }
+      this.loading = false
+    },
+    setIncorrectMessage(message) {
+      this.message.success = false
+      this.message.text = message
       this.loading = false
     },
   },
