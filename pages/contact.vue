@@ -110,6 +110,7 @@
                     v-model="form.subject"
                     class="form-control"
                     aria-describedby="Contact me subject"
+                    required
                   />
                 </div>
                 <div class="mb-3">
