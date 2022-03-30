@@ -74,6 +74,19 @@
         <div class="col-md-6 mt-5 mt-sm-0">
           <div class="card mt-3 position-relative">
             <div class="card-body">
+              <div v-if="message.text">
+                <div
+                  v-if="message.success"
+                  class="alert"
+                  :class="{
+                    'alert-success': message.success,
+                    'alert-danger': !message.success,
+                  }"
+                  role="alert"
+                >
+                  {{ message.text }}
+                </div>
+              </div>
               <form @submit.prevent="sendEmail">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"
@@ -165,6 +178,7 @@ export default {
         body: '',
       },
       loading: false,
+      message: { text: '', success: true },
     }
   },
   head() {
@@ -181,14 +195,19 @@ export default {
           this.form
         )
       } catch (error) {
-        console.log(error.message)
+        this.message.text = error.message
+        this.message.success = false
+        this.loading = false
+        return
       }
+      this.message.success = true
+      this.message.text = 'Email send successfully'
       this.form = {
         address: '',
         subject: '',
         body: '',
       }
-      this.loading = true
+      this.loading = false
     },
   },
 }
