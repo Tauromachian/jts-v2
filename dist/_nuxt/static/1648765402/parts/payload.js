@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/parts", {data:[{}],fetch:{},mutations:void 0});
