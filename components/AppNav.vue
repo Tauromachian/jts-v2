@@ -2,12 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <nuxt-link to="/" class="navbar-brand">
-        <img
-          class="img-fluid"
-          src="/johnson-logo-min.png"
-          alt="JTS Logo"
-          width="500"
-        />
+        <img class="img-fluid" :src="logo" alt="JTS Logo" width="500" />
       </nuxt-link>
       <button
         v-if="isScreenSmall"
@@ -148,6 +143,13 @@ export default {
     },
     path() {
       return this.$nuxt.$route.name
+    },
+    logo() {
+      const routeName = this.$nuxt.$route.name
+      if (routeName === 'repair' || routeName === 'service') {
+        return '/JTRS-min.png'
+      }
+      return '/johnson-logo-min.png'
     },
   },
 
