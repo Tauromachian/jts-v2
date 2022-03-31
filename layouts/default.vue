@@ -10,12 +10,7 @@
         class="d-flex flex-column justify-content-center align-items-center pt-5"
       >
         <nuxt-link to="/" class="navbar-brand">
-          <img
-            class="img-fluid"
-            src="/johnson-logo-min.png"
-            alt="JTS Logo"
-            width="300"
-          />
+          <img class="img-fluid" :src="logo" alt="JTS Logo" width="300" />
         </nuxt-link>
         <div class="d-flex justify-content-center">
           <a href="https://www.linkedin.com/company/johnsonturbine/"
@@ -64,6 +59,13 @@ export default {
   computed: {
     isHomeView() {
       return this.$nuxt.$route.name === 'index'
+    },
+    logo() {
+      const routeName = this.$nuxt.$route.name
+      if (routeName === 'repair' || routeName === 'service') {
+        return '/JTRS-min.png'
+      }
+      return '/johnson-logo-min.png'
     },
   },
 
