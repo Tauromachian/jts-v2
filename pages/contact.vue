@@ -192,12 +192,18 @@ export default {
   methods: {
     async sendEmail() {
       this.loading = true
+      const emailServiceToken = process.env.NUXT_ENV_EMAIL_SERVICE_TOKEN
+
+      const data = {
+        ...this.form,
+        token: emailServiceToken
+      }
 
       let response
       try {
         response = await this.$axios.$post(
           'https://jts-email-service.herokuapp.com/api/email',
-          this.form
+          data
         )
       } catch (error) {
         this.setIncorrectMessage(error.message)
