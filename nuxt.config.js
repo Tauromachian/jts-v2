@@ -10,7 +10,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'keywords', content: 'turbine,inventory,repair,service,GG4,FT4' },
+      {
+        name: 'keywords',
+        content:
+          'turbine, inventory, repair, service, GG4, FT4, gas turbine, jet turbine,overhaul,free turbine, GG4, FT4, spare, parts, aero, derivative, aeroderivative, overhaul GG4, overhaul FT4, engines, Wood Group Pratt & Whitney , engine, power turbine, gas generator, repair industrial',
+      },
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'Michael Johnson' },
       { name: 'title', content: 'Johnson Turbine Support' },
