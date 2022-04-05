@@ -28,7 +28,7 @@ export default {
       { name: 'og:url', content: 'https://www.johnsonturbine.com/' },
       {
         name: 'og:image',
-        content: 'https://www.johnsonturbine.com/images/johnson-logo-min.png',
+        content: 'https://www.johnsonturbine.com/johnson-logo-min.png',
       },
       { name: 'og:type', content: 'website' },
 
