@@ -7,8 +7,8 @@
         have what you need.
       </p>
 
-      <div class="row mt-5">
-        <div class="col-md-6 d-flex flex-column justify-content-center">
+      <div class="row mt-6em">
+        <div class="col-md-4 d-flex flex-column justify-content-center">
           <h2>We are your parts solution.</h2>
           <p>
             We have one of the world's largest inventories of spare parts. Our
@@ -16,7 +16,7 @@
             We offer rotables on many in-demand parts to minimize down-time.
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7 ms-auto">
           <img
             class="img-fluid w-100"
             src="/gg4-ft4-parts-warehouse.jpg"
@@ -26,9 +26,9 @@
       </div>
 
       <div class="row">
-        <div class="col-12 mt-5">
+        <div class="col-12 mt-6em">
           <div class="row">
-            <div class="col-md-6 d-flex flex-column justify-content-center">
+            <div class="col-md-4 d-flex flex-column justify-content-center">
               <h2>Inventory Management</h2>
               <p>
                 Our inventory management is key to your success. With over
@@ -36,7 +36,7 @@
                 can ship same day.
               </p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-7 ms-auto">
               <img
                 class="img-fluid w-100"
                 src="/turbine-parts-1.jpg"
@@ -47,9 +47,9 @@
         </div>
       </div>
 
-      <div class="col-12 mt-5">
+      <div class="col-12 mt-6em">
         <div class="row">
-          <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="col-md-4 d-flex flex-column justify-content-center">
             <h2>Rotables</h2>
             <p>
               We offer rotables for fuel pumps, starters, manifolds, exciter
@@ -65,14 +65,13 @@
               </li>
             </ul>
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <img
-            class="img-fluid w-100"
-            src="/gg4-rotable-parts-fuel-pump-starter-chandler-evans-tdi-garrett-airesearch-allied-signal-honeywell.jpg"
-            alt="Rotable parts. Fuel pump, starters, and more"
-          />
+          <div class="col-md-7 ms-auto">
+            <img
+              class="img-fluid w-100"
+              src="/gg4-rotable-parts-fuel-pump-starter-chandler-evans-tdi-garrett-airesearch-allied-signal-honeywell.jpg"
+              alt="Rotable parts. Fuel pump, starters, and more"
+            />
+          </div>
         </div>
       </div>
     </section>

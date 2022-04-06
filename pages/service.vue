@@ -4,7 +4,7 @@
       <h1>Service</h1>
 
       <div class="row mt-5">
-        <div class="col-md-6 d-flex flex-column justify-content-center">
+        <div class="col-md-4 d-flex flex-column justify-content-center">
           <h4>Engine & Turbine Overhaul</h4>
           <p>
             With more than 100 years combined experience, we know how to get the
@@ -12,14 +12,14 @@
             consumables, we also offer rotable modules to expedite your project.
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7 ms-auto">
           <img
             src="/gg4-pratt-whitney-gas-turbine-install.JPG"
             alt="Pratt and Whitney GG4 gas turbine install."
             class="img-fluid"
           />
         </div>
-        <h4 class="white">Project Management</h4>
+        <h4 class="white mt-5">Project Management</h4>
         <p>
           Our expediting services streamline the overhaul process to keep things
           on schedule and on budget.
