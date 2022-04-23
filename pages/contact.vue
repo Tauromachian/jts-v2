@@ -196,7 +196,7 @@ export default {
 
       const data = {
         ...this.form,
-        token: emailServiceToken
+        token: emailServiceToken,
       }
 
       let response
@@ -215,7 +215,7 @@ export default {
       }
 
       this.message.success = true
-      this.message.text = 'Email send successfully'
+      this.message.text = 'Email sent successfully'
       this.form = {
         address: '',
         subject: '',
